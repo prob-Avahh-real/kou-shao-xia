@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <meta name="theme-color" content="#050810" />
+    <title>银河护卫队 · 口哨冒险</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game" aria-label="银河护卫队口哨冒险游戏画面"></canvas>
+
+      <p class="hero-hint">站在蓝色平台可切换英雄</p>
+
+      <section class="controls" aria-label="游戏控制">
+        <div id="stick" class="stick" aria-label="移动摇杆">
+          <span class="stick-ring"></span>
+          <span class="knob"></span>
+        </div>
+        <div class="action-col">
+          <button id="ability" class="action" aria-label="施展绝招">口哨</button>
+          <button id="switch" class="action secondary" aria-label="切换英雄">切换</button>
+        </div>
+        <div id="steer" aria-label="口哨飞箭轨迹控制">
+          按住口哨<br />滑动控箭
+        </div>
+      </section>
+
+      <nav class="toolbar">
+        <button id="mic" aria-label="启用麦克风口哨">🎤 口哨</button>
+        <button id="sensor" class="sensor" aria-label="手表体感">⌚ 体感</button>
+        <button id="help">玩法</button>
+      </nav>
+
+      <dialog id="helpDialog">
+        <h2>口哨冒险</h2>
+        <p><b>十关玩法各异：</b>口哨教学 → 英雄分工 → 撞墙开路 → 弹射破盾 → 地雷堵口 → 限时夺钥 → 坚守波次 → 擂台清场 → 辐射穿越 → Boss 决战。</p>
+        <p><b>勇度 · 口哨飞箭</b>：按住「口哨」并在右侧区域滑动，飞箭沿轨迹飞行、弹射穿敌，松手归返。也可开启麦克风，吹口哨自动施放。</p>
+        <p><b>星爵 · 元素双枪</b>：扇形连射，适合近距清场。</p>
+        <p><b>卡魔拉 · 死亡舞步</b>：向前疾冲斩击路径敌人；穿越危险地板首选。</p>
+        <p><b>德拉克斯 · 蛮力冲撞</b>：撞碎紫色脆弱墙，击飞敌人。</p>
+        <p><b>火箭 · 陷阱火箭</b>：部署感应地雷，封锁窄道。</p>
+        <p><b>格鲁特 · 藤蔓缠绕</b>：定身周围敌人，坚守波次利器。</p>
+        <p>站在蓝色平台可切换英雄（Q/E 或点选底部栏）。键盘：WASD 移动，空格绝招。</p>
+        <button id="closeHelp">知道了</button>
+      </dialog>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
