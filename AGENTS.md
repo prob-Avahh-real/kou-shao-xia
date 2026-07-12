@@ -16,7 +16,7 @@ This file provides context for AI assistants working on this project.
 ## Directory Structure
 
 ```
-guardian-adventure/
+whistle-archer/
 ├── index.html          # Shell: canvas, touch controls, help dialog
 ├── package.json        # Vite devDep only; "type": "module"
 ├── README.md           # Chinese docs: heroes, levels, controls

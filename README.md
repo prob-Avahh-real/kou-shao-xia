@@ -31,7 +31,7 @@
 ## 启动
 
 ```bash
-cd /Users/skat/Projects/guardian-adventure
+cd /Users/skat/Projects/whistle-archer
 npm install
 npm run dev
 ```
